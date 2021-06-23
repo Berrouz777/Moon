@@ -1,0 +1,155 @@
+.nav {
+  @media (max-width: $tablet-width) {
+    display: flex;
+    position: relative;
+  }
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 20px 25px 10px 25px;
+  border-bottom: 1px solid transparentize($color: $white, $amount: 0.8);
+  // outline: 1px solid red;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+
+    &--open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+      background-color: $white;
+      padding: 70px 0 30px 0;
+    }
+  }
+}
+
+.nav__item a {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 300;
+  color: transparentize($color: $white, $amount: 0.3);
+  text-decoration: none;
+
+  &:hover {
+    color: $white;
+  }
+
+  &:active {
+    color: transparentize($color: $white, $amount: 0.7);
+  }
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    position: relative;
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 400;
+    width: 100%;
+    // height: 60px;
+    margin-top: 30px;
+    padding: 16px 15px;
+    color: $dark-grey;
+    background-color: $light-grey;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      right: 55px;
+      width: 8px;
+      height: 2px;
+      background-color: $black;
+      opacity: 0.5;
+    }
+
+    &::after {
+      top: 25px;
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      top: 30px;
+      transform: rotate(-45deg);
+    }
+
+    &:hover,
+    &:active {
+      color: $black;
+      background-color: $grey;
+    }
+  }
+}
+
+.nav__button {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    background-color: $bright-blue;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+
+    span {
+      display: block;
+      position: relative;
+      width: 22.5px;
+      height: 1px;
+      background-color: $black;
+      margin: 0 auto;
+
+      &::after,
+      &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 22.5px;
+          height: 1px;
+          background-color: $black;
+      }
+
+      &::before {
+          top: -7px;
+      }
+
+      &::after {
+          top: 6px;
+      }
+    }
+
+    &--open {
+      background-color: transparent;
+
+      span {
+        background-color: transparent;
+
+        &::after,
+        &::before {
+          width: 30px;
+          top: 0;
+          left: -5px;
+          opacity: 0.2;
+        }
+
+        &::after {
+          transform: rotate(45deg);
+        }
+
+        &::before {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}
