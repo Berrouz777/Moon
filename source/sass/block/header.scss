@@ -1,15 +1,12 @@
 .header {
   min-height: 825px;
   background: $black;
-  // background-image: url("../img/bicycle-desktop.jpg");
   background-image: url("../img/bicycle-desktop.webp");
   background-position: 0 0;
   background-size: 100% 825px;
   background-repeat: no-repeat;
-  // outline: 1px solid red;
 
   @media (min-resolution: 2dppx) {
-    // background-image: url("../img/bicycle-desktop@2x.jpg");
     background-image: url("../img/bicycle-desktop@2x.webp");
   }
 
@@ -54,7 +51,6 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   margin-top: 260px;
-  // outline: 1px solid red;
 
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr;
@@ -70,6 +66,7 @@
 .header__logo {
   display: block;
   margin-top: -5px;
+  cursor: default;
 
   @media (max-width: $tablet-width) {
     position: absolute;
@@ -100,7 +97,6 @@
     font-size: 30px;
     line-height: 42px;
     text-align: center;
-    // outline: 1px solid red;
   }
 
   @media (max-width: $mobile-width) {
@@ -123,7 +119,6 @@
     text-align: center;
     width: 60%;
     margin: 20px auto 0 auto;
-    // outline: 1px solid red;
   }
 
   @media (max-width: $mobile-width) {
@@ -136,7 +131,6 @@
   flex-direction: column;
   width: 326px;
   margin-left: 160px;
-  // outline: 1px solid red;
 
   @media (max-width: $tablet-width) {
     width: 321px;
@@ -163,7 +157,6 @@
     font-size: 18px;
     color: $black;
     margin-bottom: 10px;
-    // letter-spacing: 0.px;
   }
 
   @media (max-width: $mobile-width) {

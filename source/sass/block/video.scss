@@ -1,16 +1,13 @@
 .video {
   background-color: $black3;
   min-height: 706px;
-  // margin-top: 125px;
 
   @media (max-width: $tablet-width) {
     min-height: 413px;
-    // margin-top: 22px;
   }
 
   @media (max-width: $mobile-width) {
     min-height: 384px;
-    // margin-top: 32px;
   }
 }
 
@@ -60,7 +57,6 @@
   color: transparentize($color: $white, $amount: 0.3);
   text-align: center;
   cursor: default;
-  // outline: 1px solid red;
 
   @media (max-width: $tablet-width) {
     max-width: 480px;

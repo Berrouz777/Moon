@@ -6,9 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Moon</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin>
   <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin>
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin>
   <link rel="preload" href="fonts/opensanssemibold.woff2" as="font" crossorigin>
+  <link rel="preload" href="img/bicycle-mobile@2x.webp" as="image">
+  <link rel="preload" href="img/map-mobile@2x.webp" as="image">
+  <link rel="preload" href="img/video-mobile@2x.webp" as="image">
+
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -47,7 +52,7 @@
 
   <header class="header header--without-js">
     <nav class="header__nav nav">
-      <ul class="nav__list nav__list--without-js"> <!--  открытие меню nav__list--open  -->
+      <ul class="nav__list nav__list--without-js">  <!--  открытие меню nav__list--open  -->
         <li class="nav__item">
           <a href="#about-us">О нас</a>
         </li>
@@ -61,11 +66,11 @@
           <a href="#contacts">Контакты</a>
         </li>
       </ul>
-      <button class="nav__button nav__button--without-js" type="button" aria-label="Кнопка меню"><span></span></button> <!--  открытие меню nav__list--button  -->
+      <button class="nav__button nav__button--without-js" type="button" aria-label="Кнопка меню"><span></span></button>  <!--  открытие меню nav__list--button  -->
     </nav>
     <div class="header__wrapper">
       <div class="header__content">
-        <a class="header__logo header__logo--without-js" aria-label="Логотип Moon">
+        <a class="header__logo header__logo--without-js" href="#" aria-label="Логотип Moon">
           <svg class="header__logo-icon" width="68" height="21">
             <use xlink:href="#icon-logo"></use>
           </svg>
@@ -95,10 +100,12 @@
         </li>
         <li class="advantages__item">
           <span>02</span>
-          <p>Доставка велосипедов по всей России!</p></li>
+          <p>Доставка велосипедов по всей России!</p>
+        </li>
         <li class="advantages__item">
           <span>03</span>
-          <p>Большой выбор крутых аксессуаров!</p></li>
+          <p>Большой выбор крутых аксессуаров!</p>
+        </li>
         <li class="advantages__item">
           <span>04</span>
           <p>Профессиональные консультации!</p>
@@ -112,10 +119,13 @@
           <li class="bicycles__item">
             <div class="bicycles__img-wrapper bicycles__img-wrapper--1">
               <picture>
-                <source media="(max-width: 1023px)" type="image/webp" srcset="img/bicycle-item1-tablet.webp 1x, img/bicycle-item1-tablet@2x.webp 2x">
-                <source media="(min-width: 1024px)" type="image/webp" srcset="img/bicycle-item1-desktop.webp 1x, img/bicycle-item1-desktop@2x.webp 2x">
+                <source media="(max-width: 1023px)" type="image/webp"
+                  srcset="img/bicycle-item1-tablet.webp 1x, img/bicycle-item1-tablet@2x.webp 2x">
+                <source media="(min-width: 1024px)" type="image/webp"
+                  srcset="img/bicycle-item1-desktop.webp 1x, img/bicycle-item1-desktop@2x.webp 2x">
                 <!--  1x=342x503, 2x=684x1006  -->
-                <img src="img/bicycle-item1-desktop.jpg" srcset="img/bicycle-item1-desktop@2x.jpg 2x"  width="342" height="503" alt="Дорожный велосипед">
+                <img src="img/bicycle-item1-desktop.jpg" srcset="img/bicycle-item1-desktop@2x.jpg 2x" width="342"
+                  height="503" alt="Дорожный велосипед">
               </picture>
             </div>
             <h3>Дорожный велосипед</h3>
@@ -123,10 +133,13 @@
           <li class="bicycles__item">
             <div class="bicycles__img-wrapper bicycles__img-wrapper--2">
               <picture>
-                <source media="(max-width: 1023px)" type="image/webp" srcset="img/bicycle-item2-tablet.webp 1x, img/bicycle-item2-tablet@2x.webp 2x">
-                <source media="(min-width: 1024px)" type="image/webp" srcset="img/bicycle-item2-desktop.webp 1x, img/bicycle-item2-desktop@2x.webp 2x">
+                <source media="(max-width: 1023px)" type="image/webp"
+                  srcset="img/bicycle-item2-tablet.webp 1x, img/bicycle-item2-tablet@2x.webp 2x">
+                <source media="(min-width: 1024px)" type="image/webp"
+                  srcset="img/bicycle-item2-desktop.webp 1x, img/bicycle-item2-desktop@2x.webp 2x">
                 <!--  1x=342x503, 2x=684x1006  -->
-                <img src="img/bicycle-item2-desktop.jpg" srcset="img/bicycle-item2-desktop@2x.jpg 2x" width="342" height="566" alt="Горный велосипед">
+                <img src="img/bicycle-item2-desktop.jpg" srcset="img/bicycle-item2-desktop@2x.jpg 2x" width="342"
+                  height="566" alt="Горный велосипед">
               </picture>
             </div>
             <h3>Горный велосипед</h3>
@@ -134,10 +147,13 @@
           <li class="bicycles__item">
             <div class="bicycles__img-wrapper bicycles__img-wrapper--3">
               <picture>
-                <source media="(max-width: 1023px)" type="image/webp" srcset="img/bicycle-item3-tablet.webp 1x, img/bicycle-item3-tablet@2x.webp 2x">
-                <source media="(min-width: 1024px)" type="image/webp" srcset="img/bicycle-item3-desktop.webp 1x, img/bicycle-item3-desktop@2x.webp 2x">
+                <source media="(max-width: 1023px)" type="image/webp"
+                  srcset="img/bicycle-item3-tablet.webp 1x, img/bicycle-item3-tablet@2x.webp 2x">
+                <source media="(min-width: 1024px)" type="image/webp"
+                  srcset="img/bicycle-item3-desktop.webp 1x, img/bicycle-item3-desktop@2x.webp 2x">
                 <!--  1x=270x300, 2x=540x600  -->
-                <img src="img/bicycle-item3-tablet.jpg" srcset="img/bicycle-item3-tablet@2x.jpg 2x" width="342" height="513" alt="Детский велосипед">
+                <img src="img/bicycle-item3-tablet.jpg" srcset="img/bicycle-item3-tablet@2x.jpg 2x" width="342"
+                  height="513" alt="Детский велосипед">
               </picture>
             </div>
             <h3>Детский велосипед</h3>
@@ -151,11 +167,15 @@
         <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
         <div class="video__wrapper">
           <picture>
-            <source media="(max-width: 767px)" type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
-            <source media="(max-width: 1023px)" type="image/webp" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
-            <source media="(min-width: 1024px)" type="image/webp" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+            <source media="(max-width: 767px)" type="image/webp"
+              srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
+            <source media="(max-width: 1023px)" type="image/webp"
+              srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+            <source media="(min-width: 1024px)" type="image/webp"
+              srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
             <!--  1x=929x522 2x=1858x1044  -->
-            <img src="img/video-desktop.jpg" srcset="img/video-desktop@2x.jpg 2x" width="929" height="522" alt="Фото чёрного велосипеда на чёрном фоне">
+            <img src="img/video-desktop.jpg" srcset="img/video-desktop@2x.jpg 2x" loading="lazy" width="929" height="522"
+              alt="Фото чёрного велосипеда на чёрном фоне">
           </picture>
           <button class="video__button" type="button" aria-label="Кнопка play"></button>
         </div>
@@ -166,13 +186,14 @@
     <div class="footer__wrapper">
       <h2>Как нас найти?</h2>
       <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-        <picture>
-          <source media="(max-width: 767px)" type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
-          <source media="(max-width: 1023px)" type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x">
-          <source media="(min-width: 1024px)" type="image/webp" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
-          <!--  1x=698x545, 2x=1396x1090  -->
-          <img src="img/map.png" srcset="img/map@2x.png 2x" width="957" height="530" alt="Карта Санкт-Петербурга">
-        </picture>
+      <picture>
+        <source media="(max-width: 767px)" type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+        <source media="(max-width: 1023px)" type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x">
+        <source media="(min-width: 1024px)" type="image/webp"
+          srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+        <!--  1x=698x545, 2x=1396x1090  -->
+        <img src="img/map.png" srcset="img/map@2x.png 2x" loading="lazy" width="957" height="530" alt="Карта Санкт-Петербурга">
+      </picture>
       <div class="footer__contacts">
         <a href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru
           <svg width="26" height="20">
