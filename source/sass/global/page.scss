@@ -26,13 +26,13 @@
 }
 
 @font-face {
-    font-family: "Open Sans";
-    src: url("../fonts/opensanssemibold.woff2") format("woff2"),
-      url("../fonts/opensanssemibold.woff") format("woff");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-  }
+  font-family: "Open Sans";
+  src: url("../fonts/opensanssemibold.woff2") format("woff2"),
+    url("../fonts/opensanssemibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 
 .page {
   height: 100%;
@@ -44,6 +44,7 @@
 .page__body {
   margin: 0;
   min-width: 320px;
+  // height: 100%;
   background-color: $white;
   overflow: auto;
 

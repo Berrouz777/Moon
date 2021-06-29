@@ -1,0 +1,157 @@
+.footer {
+  // margin-top: auto;
+  // outline: 1px solid red;
+}
+
+.footer__wrapper {
+  max-width: 957px;
+  margin: 250px auto 0 auto;
+  padding-bottom: 100px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 698px;
+    margin-top: 155px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 100%;
+    margin-top: 120px;
+  }
+}
+
+.footer__wrapper h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-weight: 600;
+  text-align: center;
+  color: $black2;
+  cursor: default;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+.footer__wrapper p {
+  font-size: 17px;
+  line-height: 31px;
+  // font-weight: 400;
+  text-align: center;
+  margin: 0 190px;
+  padding-top: 5px;
+  color: transparentize($color: $black, $amount: 0.3);
+  cursor: default;
+
+  @media (max-width: $tablet-width) {
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 20px 25px 0 25px;
+  }
+}
+
+.footer__wrapper img {
+  object-fit: cover;
+  margin-top: 40px;
+  // outline: 1px solid red;
+
+  @media (max-width: $tablet-width) {
+    width: 698px;
+    height: 545px;
+    margin-top: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    height: 250px;
+    object-fit: fill;
+  }
+}
+
+.footer__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: 30px auto 0 auto;
+  // outline: 1px solid red;
+
+  @media (max-width: $tablet-width) {
+    justify-content: start;
+    margin-top: 13px;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer__contacts svg {
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+.footer__contacts a {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  padding-left: 40px;
+  color: transparentize($color: $black, $amount: 0.5);
+  text-decoration: none;
+  // outline: 1px solid red;
+
+  &:hover {
+    color: transparentize($color: $black, $amount: 0.3);
+  }
+
+  &:active {
+    color: transparentize($color: $black, $amount: 0.7);
+  }
+}
+
+.footer__contacts a[href^="mailto"] {
+  margin-left: 75px;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 70px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0;
+    padding: 5px 10px 5px 60px;
+  }
+}
+
+.footer__contacts a[href^="tel"] {
+  margin-right: 90px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+    margin-left: 90px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 5px 0 0 0;
+    padding: 5px 10px 5px 35px;
+  }
+}
+
+a[href^="mailto"] svg {
+  @media (max-width: $mobile-width) {
+    left: 17px;
+    top: 14px;
+  }
+}

@@ -1,18 +1,21 @@
 .header {
   min-height: 825px;
-  background-color: $black;
+  background: $black;
+  // background-image: url("../img/bicycle-desktop.jpg");
   background-image: url("../img/bicycle-desktop.webp");
   background-position: 0 0;
   background-size: 100% 825px;
   background-repeat: no-repeat;
+  // outline: 1px solid red;
 
   @media (min-resolution: 2dppx) {
+    // background-image: url("../img/bicycle-desktop@2x.jpg");
     background-image: url("../img/bicycle-desktop@2x.webp");
   }
 
   @media (max-width: $tablet-width) {
-    background: linear-gradient(0deg, $black 340px, $white 340px);
-    background-image: url("../img/bicycle-tablet.webp");
+    min-height: 750px;
+    background: url("../img/bicycle-tablet.webp"), linear-gradient(0deg, $black 340px, $white 340px);
     background-size: 100% 340px;
     background-repeat: no-repeat;
 
@@ -26,7 +29,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    background-image: url("../img/bicycle-mobile.webp");
+    background: url("../img/bicycle-mobile.webp"), linear-gradient(0deg, $black 390px, $white 390px);
     background-size: 100% 390px;
     background-repeat: no-repeat;
 
@@ -136,7 +139,7 @@
   // outline: 1px solid red;
 
   @media (max-width: $tablet-width) {
-    width: 322px;
+    width: 321px;
     margin: 150px auto 0 auto;
   }
 
@@ -150,10 +153,10 @@
   font-size: 17px;
   line-height: 28px;
   font-weight: 600;
-  letter-spacing: 0.2px;
+  letter-spacing: -0.5%;
   text-align: center;
   color: $white;
-  margin: 0;
+  margin: 0 -10px;
   cursor: default;
 
   @media (max-width: $tablet-width) {
@@ -195,7 +198,6 @@
 
   @media (max-width: $tablet-width) {
     padding-left: 20px;
-    padding-top: 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -209,7 +211,7 @@
   font-size: 15px;
   line-height: 21px;
   font-weight: 600;
-  height: 51px;
+  min-height: 51px;
   border: none;
   border-radius: 5px;
   margin-top: 20px;
