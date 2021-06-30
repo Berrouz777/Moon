@@ -3,7 +3,7 @@
   background: $black;
   background-image: url("../img/bicycle-desktop.webp");
   background-position: 0 0;
-  background-size: 100% 825px;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
@@ -66,7 +66,6 @@
 .header__logo {
   display: block;
   margin-top: -5px;
-  cursor: default;
 
   @media (max-width: $tablet-width) {
     position: absolute;
