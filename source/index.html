@@ -11,14 +11,12 @@
   <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin>
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin>
   <link rel="preload" href="fonts/opensanssemibold.woff2" as="font" crossorigin>
-  <link rel="preload" href="img/bicycle-mobile@2x.webp" as="image">
-  <link rel="preload" href="img/map-mobile@2x.webp" as="image">
-  <link rel="preload" href="img/video-mobile@2x.webp" as="image">
-
+  <link rel="preload" href="img/bicycle-mobile@2x.webp" as="image" crossorigin>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="page__body">
+<body class="body">
 
   <svg style="display: none;">
     <symbol id="icon-email" viewBox="0 0 26 20">
@@ -82,7 +80,7 @@
       <form class="header__form" action="#" method="POST">
         <p>Заполните поля ниже и мы подберём велосипед Вашей мечты</p>
         <label for="name">
-          <input type="text" id="name" name="name" placeholder="Введите Ваше Имя" pattern="[A-Za-zА-Яа-яЁё]" required>
+          <input type="text" id="name" name="name" placeholder="Введите Ваше Имя" pattern="^[А-Яа-яЁё\s]+$" required>
         </label>
         <label for="phone">
           <input type="tel" id="phone" name="phone" placeholder="Введите Ваш номер телефона" required>
@@ -174,7 +172,7 @@
               srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
             <source media="(min-width: 1024px)" type="image/webp"
               srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
-            <!--  1x=929x522 2x=1858x1044  -->
+            <!--  1x=929x522, 2x=1858x1044  -->
             <img src="img/video-desktop.jpg" srcset="img/video-desktop@2x.jpg 2x" loading="lazy" width="929" height="522"
               alt="Фото чёрного велосипеда на чёрном фоне">
           </picture>

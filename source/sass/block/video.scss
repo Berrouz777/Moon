@@ -1,13 +1,15 @@
 .video {
-  background-color: $black3;
-  min-height: 706px;
+  background: linear-gradient(180deg, $black3 87.7%, $white 87.7%);
+  min-height: 804px;
 
   @media (max-width: $tablet-width) {
-    min-height: 413px;
+    background: linear-gradient(180deg, $black3 82.5%, $white 82.5%);
+    min-height: 498px;
   }
 
   @media (max-width: $mobile-width) {
-    min-height: 384px;
+    background: linear-gradient(180deg, $black3 87.7%, $white 87.7%);
+    min-height: 433px;
   }
 }
 
@@ -69,15 +71,15 @@
 }
 
 .video__wrapper {
-  position: absolute;
-  top: 282px;
+  position: relative;
+  margin-top: 55px;
 
   @media (max-width: $tablet-width) {
-    top: 217px;
+    margin-top: 40px;
   }
 
   @media (max-width: $mobile-width) {
-    top: 270px;
+    margin-top: 53px;
   }
 }
 

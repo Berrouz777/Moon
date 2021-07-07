@@ -1,37 +1,37 @@
 .header {
   min-height: 825px;
   background: $black;
-  background-image: url("../img/bicycle-desktop.webp");
+  background-image: url("../img/bicycle-desktop.webp"), url("../img/bicycle-desktop.jpg");
   background-position: 0 0;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/bicycle-desktop@2x.webp");
+    background-image: url("../img/bicycle-desktop@2x.webp"), url("../img/bicycle-desktop@2x.jpg");
   }
 
   @media (max-width: $tablet-width) {
     min-height: 750px;
-    background: url("../img/bicycle-tablet.webp"), linear-gradient(0deg, $black 340px, $white 340px);
+    background: url("../img/bicycle-tablet.webp"), url("../img/bicycle-tablet.jpg"), linear-gradient(0deg, $black 340px, $white 340px);
     background-size: 100% 340px;
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/bicycle-tablet@2x.webp");
+      background-image: url("../img/bicycle-tablet@2x.webp"), url("../img/bicycle-tablet@2x.jpg");
     }
 
     &--without-js {
-      margin-top: 400px;
+      margin-top: 600px;
     }
   }
 
   @media (max-width: $mobile-width) {
-    background: url("../img/bicycle-mobile.webp"), linear-gradient(0deg, $black 390px, $white 390px);
+    background: url("../img/bicycle-mobile.jpg"), linear-gradient(0deg, $black 390px, $white 390px);
     background-size: 100% 390px;
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/bicycle-mobile@2x.webp");
+      background-image: url("../img/bicycle-mobile@2x.jpg");
     }
   }
 }
@@ -74,7 +74,7 @@
     left: 20px;
 
     &--without-js {
-      top: 425px;
+      top: 625px;
     }
   }
 
@@ -165,11 +165,12 @@
 
 .header__form input {
   width: 100%;
-  height: 48px;
+  // height: 48px;
   border: 1px solid $grey;
   border-radius: 5px;
   padding-left: 26px;
-  padding-top: 5px;
+  padding-top: 14px;
+  padding-bottom: 11px;
   margin-top: 20px;
   box-sizing: border-box;
 
